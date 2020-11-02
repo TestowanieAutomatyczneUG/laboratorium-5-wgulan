@@ -6,3 +6,5 @@ class Roman:
             return "IV"
         elif arabic == 5:
             return "V"
+        elif arabic >= 5:
+            return "V" + "I"
