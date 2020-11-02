@@ -31,11 +31,11 @@ class HammingTest(unittest.TestCase):
     def test_disallow_second_strand_longer(self):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.distance("ATA", "AGTG")
-            
+
     def test_disallow_left_empty_strand(self):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.distance("", "G")
-    @unittest.skip
+            
     def test_disallow_right_empty_strand(self):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.distance("G", "")
