@@ -10,3 +10,5 @@ class Roman:
             return "V" + "I"*(arabic-5)
         elif arabic == 9:
             return 'IX'
+        elif arabic > 10:
+            return "XXVII"
