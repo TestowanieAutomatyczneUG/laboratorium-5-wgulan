@@ -4,3 +4,5 @@ class Roman:
             return "I" * arabic
         elif arabic == 4:
             return "IV"
+        elif arabic == 5:
+            return "V"
