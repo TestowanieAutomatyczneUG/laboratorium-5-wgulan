@@ -23,7 +23,7 @@ class HammingTest(unittest.TestCase):
 
     def test_long_different_strands(self):
         self.assertEqual(self.temp.distance("GGACGGATTCTG", "AGGACGGATTCT"), 9)
-    @unittest.skip
+
     def test_disallow_first_strand_longer(self):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.distance("AATG", "AAA")
@@ -39,7 +39,7 @@ class HammingTest(unittest.TestCase):
     def test_disallow_right_empty_strand(self):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.distance("G", "")
-    @unittest.skip
+
     # Utility functions
     def assertRaisesWithMessage(self, exception):
         return self.assertRaisesRegex(exception, r".+")
