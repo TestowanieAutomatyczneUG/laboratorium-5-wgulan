@@ -4,3 +4,5 @@ class Hamming:
             return 0
         elif gene1 == gene2:
             return 0
+        elif gene1 != gene2:
+            return 1
