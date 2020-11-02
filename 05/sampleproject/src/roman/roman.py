@@ -1,7 +1,7 @@
 class Roman:
     def roman(self, arabic):
-        rom = ["X", "IX", "V", "IV", "I"]
-        arab = [10, 9, 5, 4, 1]
+        rom = ["L", "XL", "X", "IX", "V", "IV", "I"]
+        arab = [50, 40, 10, 9, 5, 4, 1]
 
         res = ''
 
