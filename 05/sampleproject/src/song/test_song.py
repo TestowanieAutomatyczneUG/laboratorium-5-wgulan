@@ -82,7 +82,6 @@ class SongTest(unittest.TestCase):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.verse(-5)
 
-    @unittest.skip
     def test_disallow_starting_verse_larger_than_ending(self):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.verses_between(8, 2)
