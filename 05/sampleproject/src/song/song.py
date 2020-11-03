@@ -2,7 +2,8 @@ class Song:
     def __init__(self):
         self.song = [
             "On the first day of Christmas my true love gave to me: a Partridge in a Pear Tree.",
-            "On the second day of Christmas my true love gave to me: two Turtle Doves, and a Partridge in a Pear Tree."
+            "On the second day of Christmas my true love gave to me: two Turtle Doves, and a Partridge in a Pear Tree.",
+            "On the third day of Christmas my true love gave to me: three French Hens, two Turtle Doves, and a Partridge in a Pear Tree."
         ]
 
     def verse(self, numOfVerse):
@@ -11,4 +12,4 @@ class Song:
         if numOfVerse == 2:
             return self.song[1]
         if numOfVerse == 3:
-            return "On the third day of Christmas my true love gave to me: three French Hens, two Turtle Doves, and a Partridge in a Pear Tree."
+            return self.song[2]
