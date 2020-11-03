@@ -40,6 +40,8 @@ class Song:
         return self.song[numOfVerse - 1]
 
     def verses_between(self, start, end):
+        if type(start) != int or type(end) != int:
+            raise TypeError("Numbers of verses have to be integers")
         if not 0 < start <= end <= 12:
             raise ValueError("Numbers of starting and ending verse have to be in range 1-12")
         verses = "\n".join(self.song[start - 1:end])
