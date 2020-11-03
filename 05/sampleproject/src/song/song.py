@@ -33,6 +33,8 @@ class Song:
         ]
 
     def verse(self, numOfVerse):
+        if type(numOfVerse) != int:
+            raise TypeError("Number of verse has to be an integer")
         if not 1 <= numOfVerse <= 12:
             raise ValueError('Verse number has to be in range 1-12')
         return self.song[numOfVerse - 1]
