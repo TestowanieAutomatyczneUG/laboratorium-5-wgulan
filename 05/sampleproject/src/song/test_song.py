@@ -90,7 +90,6 @@ class SongTest(unittest.TestCase):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.verses_between(5, 15)
 
-    @unittest.skip
     def test_disallow_negative_starting_verse(self):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.verses_between(-2, 10)
