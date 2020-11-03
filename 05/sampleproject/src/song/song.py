@@ -26,3 +26,6 @@ class Song:
             return self.song[5]
         elif numOfVerse == 7:
             return self.song[6]
+        elif numOfVerse == 8:
+            return "On the eighth day of Christmas my true love gave to me: eight Maids-a-Milking, seven Swans-a-Swimming, six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree."
+
