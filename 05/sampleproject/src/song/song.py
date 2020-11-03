@@ -35,6 +35,8 @@ class Song:
     def verse(self, numOfVerse):
         if numOfVerse < 0:
             raise ValueError('Verse number cannot be smaller than 1')
+        elif numOfVerse > 12:
+            raise ValueError('Verse number cannot be greater than 12')
         return self.song[numOfVerse - 1]
 
     def verses_between(self, start, end):
