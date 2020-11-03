@@ -25,33 +25,12 @@ class Song:
             "three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.",
             "On the eleventh day of Christmas my true love gave to me: eleven Pipers Piping, ten Lords-a-Leaping, "
             "nine Ladies Dancing, eight Maids-a-Milking, seven Swans-a-Swimming, six Geese-a-Laying, five Gold Rings, "
-            "four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree."
+            "four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.",
+            "On the twelfth day of Christmas my true love gave to me: twelve Drummers Drumming, eleven Pipers Piping, "
+            "ten Lords-a-Leaping, nine Ladies Dancing, eight Maids-a-Milking, seven Swans-a-Swimming, "
+            "six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, "
+            "and a Partridge in a Pear Tree."
         ]
 
     def verse(self, numOfVerse):
-        if numOfVerse == 1:
-            return self.song[0]
-        elif numOfVerse == 2:
-            return self.song[1]
-        elif numOfVerse == 3:
-            return self.song[2]
-        elif numOfVerse == 4:
-            return self.song[3]
-        elif numOfVerse == 5:
-            return self.song[4]
-        elif numOfVerse == 6:
-            return self.song[5]
-        elif numOfVerse == 7:
-            return self.song[6]
-        elif numOfVerse == 8:
-            return self.song[7]
-        elif numOfVerse == 9:
-            return self.song[8]
-        elif numOfVerse == 10:
-            return self.song[9]
-        elif numOfVerse == 11:
-            return self.song[10]
-        elif numOfVerse == 12:
-            return "On the twelfth day of Christmas my true love gave to me: twelve Drummers Drumming, eleven Pipers Piping, ten Lords-a-Leaping, nine Ladies Dancing, eight Maids-a-Milking, seven Swans-a-Swimming, six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree."
-
-
+        return self.song[numOfVerse - 1]
