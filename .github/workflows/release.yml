@@ -1,0 +1,36 @@
+# this file is *not* meant to cover or endorse the use of GitHub Actions, but rather to
+# help make automated releases for this project
+
+name: Release
+
+on:
+  push:
+    branches:
+      - master
+  commit:
+    branches:
+      - master
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.x'
+    - name: Install build dependencies
+      run: pip install -U setuptools wheel build
+    - name: Build
+      run: python -m build .
+    - name: Publish
+      uses: pypa/gh-action-pypi-publish@master
+      with:
+        password: ${{ secrets.pypi_password }}
+        skip_existing: true
+    - name: Unitest tests
+      run: |
+         python -m unittest 05/sampleproject/src/test_hamming.py
+         python -m unittest 05/sampleproject/src/test_roman.py
+         python -m unittest 05/sampleproject/src/test_song.py
