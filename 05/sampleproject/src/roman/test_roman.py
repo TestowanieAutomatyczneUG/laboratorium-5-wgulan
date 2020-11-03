@@ -49,7 +49,7 @@ class RomanNumeralsTest(unittest.TestCase):
 
     def test_400_being_500_100_is_cd(self):
         self.assertEqual(self.temp.roman(402), "CDII")
-    @unittest.skip
+
     def test_500_is_a_single_d(self):
         self.assertEqual(self.temp.roman(575), "DLXXV")
     @unittest.skip
