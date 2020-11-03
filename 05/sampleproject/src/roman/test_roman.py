@@ -34,10 +34,10 @@ class RomanNumeralsTest(unittest.TestCase):
 
     def test_49_is_not_40_5_4_but_rather_50_10_10_1(self):
         self.assertEqual(self.temp.roman(49), "XLIX")
-        
+
     def test_50_is_a_single_l(self):
         self.assertEqual(self.temp.roman(59), "LIX")
-    @unittest.skip
+
     def test_90_being_100_10_is_xc(self):
         self.assertEqual(self.temp.roman(93), "XCIII")
     @unittest.skip
