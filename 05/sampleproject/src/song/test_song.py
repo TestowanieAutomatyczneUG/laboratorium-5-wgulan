@@ -7,7 +7,6 @@ class SongTest(unittest.TestCase):
     def setUp(self):
         self.temp = Song()
 
-    @unittest.skip
     def test_verse_one_print(self):
         self.assertEqual(self.temp.verse(1),
                          "On the first day of Christmas my true love gave to me: a Partridge in a Pear Tree.")
