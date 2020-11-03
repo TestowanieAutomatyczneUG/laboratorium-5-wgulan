@@ -31,7 +31,6 @@ class SongTest(unittest.TestCase):
         self.assertEqual(self.temp.verse(6),
                          "On the sixth day of Christmas my true love gave to me: six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.")
 
-    @unittest.skip
     def test_verse_seven_print(self):
         self.assertEqual(self.temp.verse(7),
                          "On the seventh day of Christmas my true love gave to me: seven Swans-a-Swimming, six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.")
