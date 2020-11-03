@@ -1,12 +1,10 @@
 class Roman:
     def roman(self, arabic):
-        rom = ["C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
-        arab = [100, 90, 50, 40, 10, 9, 5, 4, 1]
+        rom = ["CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
+        arab = [400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
 
         res = ''
 
-        if arabic == 402:
-            return "CDII"
 
         for i in range(0, len(arab)):
             while arabic >= arab[i]:
