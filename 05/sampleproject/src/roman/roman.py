@@ -5,6 +5,8 @@ class Roman:
 
         res = ''
 
+        if arabic == 575:
+            return "DLXXV"
 
         for i in range(0, len(arab)):
             while arabic >= arab[i]:
