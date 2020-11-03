@@ -28,6 +28,6 @@ jobs:
         skip_existing: true
     - name: Unitest tests
       run: |
-         python -m unittest 05/sampleproject/src/test_hamming.py
-         python -m unittest 05/sampleproject/src/test_roman.py
-         python -m unittest 05/sampleproject/src/test_song.py
+         python -m unittest 05/sampleproject/src/hamming/test_hamming.py
+         python -m unittest 05/sampleproject/src/roman/test_roman.py
+         python -m unittest 05/sampleproject/src/song/test_song.py
