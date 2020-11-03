@@ -10,3 +10,5 @@ class Song:
             return self.song[0]
         if numOfVerse == 2:
             return self.song[1]
+        if numOfVerse == 3:
+            return "On the third day of Christmas my true love gave to me: three French Hens, two Turtle Doves, and a Partridge in a Pear Tree."
