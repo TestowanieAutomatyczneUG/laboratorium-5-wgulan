@@ -36,25 +36,5 @@ class Song:
         return self.song[numOfVerse - 1]
 
     def verses_between(self, start, end):
-        if start == 1 and end == 3:
-            return "On the first day of Christmas my true love gave to me: a Partridge in a Pear Tree.\nOn the second " \
-                   "day of Christmas my true love gave to me: two Turtle Doves, and a Partridge in a Pear Tree.\nOn " \
-                   "the third day of Christmas my true love gave to me: three French Hens, two Turtle Doves, " \
-                   "and a Partridge in a Pear Tree."
-        elif start == 4 and end == 7:
-            return "On the fourth day of Christmas my true love gave to me: four Calling Birds, three French Hens, " \
-                   "two Turtle Doves, and a Partridge in a Pear Tree.\nOn the fifth day of Christmas my true love " \
-                   "gave to me: five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, " \
-                   "and a Partridge in a Pear Tree.\nOn the sixth day of Christmas my true love gave to me: six " \
-                   "Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, " \
-                   "and a Partridge in a Pear Tree.\nOn the seventh day of Christmas my true love gave to me: seven " \
-                   "Swans-a-Swimming, six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, " \
-                   "two Turtle Doves, and a Partridge in a Pear Tree."
-        elif start == 11 and end == 12:
-            return "On the eleventh day of Christmas my true love gave to me: eleven Pipers Piping, " \
-                   "ten Lords-a-Leaping, nine Ladies Dancing, eight Maids-a-Milking, seven Swans-a-Swimming, " \
-                   "six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, " \
-                   "and a Partridge in a Pear Tree.\nOn the twelfth day of Christmas my true love gave to me: twelve " \
-                   "Drummers Drumming, eleven Pipers Piping, ten Lords-a-Leaping, nine Ladies Dancing, " \
-                   "eight Maids-a-Milking, seven Swans-a-Swimming, six Geese-a-Laying, five Gold Rings, four Calling " \
-                   "Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree."
+        verses = "\n".join(self.song[start-1:end])
+        return verses
