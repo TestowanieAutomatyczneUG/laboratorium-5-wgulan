@@ -98,7 +98,6 @@ class SongTest(unittest.TestCase):
         with self.assertRaisesWithMessage(TypeError):
             self.temp.verse("1")
 
-    @unittest.skip
     def test_disallow_verses_between_not_integers(self):
         with self.assertRaisesWithMessage(TypeError):
             self.temp.verses_between("abc", 2.3)
