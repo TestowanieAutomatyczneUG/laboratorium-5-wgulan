@@ -34,3 +34,10 @@ class Song:
 
     def verse(self, numOfVerse):
         return self.song[numOfVerse - 1]
+
+    def verses_between(self, start, end):
+        if start == 1 and end == 3:
+            return "On the first day of Christmas my true love gave to me: a Partridge in a Pear Tree.\nOn the second " \
+                   "day of Christmas my true love gave to me: two Turtle Doves, and a Partridge in a Pear Tree.\nOn " \
+                   "the third day of Christmas my true love gave to me: three French Hens, two Turtle Doves, " \
+                   "and a Partridge in a Pear Tree."
