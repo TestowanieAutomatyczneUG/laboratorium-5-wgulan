@@ -7,6 +7,9 @@ on:
   push:
     branches:
       - master
+  commit:
+    branches:
+      - master
 
 jobs:
   build-and-publish:
@@ -26,3 +29,8 @@ jobs:
       with:
         password: ${{ secrets.pypi_password }}
         skip_existing: true
+    - name: Unitest tests
+      run: |
+         python -m unittest src/test_hamming.py
+         python -m unittest src/test_roman.py
+         python -m unittest src/test_song.py
